@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'python:3.6-slim'
-    }
-
-  }
+  agent any
   stages {
     stage('Build') {
       agent any
